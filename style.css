@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    background-image: url(./img/background.png);
+    background-size: cover;
+
+}
+.Form_login {
+    backdrop-filter: blur(50px);
+    margin: 15% auto 0 auto;
+    display: block;
+    width: 30%;
+    padding: 40px;
+    border-radius: 30px;
+    border: 2px solid gray;
+    color: white;
+
+}
+.Form_login > h1{
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.user ,.password {
+    margin-bottom: 20px;
+}
+.user input,.password input{
+    font-weight: 300;
+    font-size: large;
+    border-radius: 10px;
+    padding: 15px 8px;
+    border: 1px solid white;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+input:focus{
+        outline: none;
+
+}
+
+.check--remember{
+    margin-right: 3px;
+    
+}
+.login_tool {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.login_tool--remember{
+    display: flex;
+    align-items: center;
+}
+
+.login_tool--remember label, .login_tool--forgot a{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.btn--login {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px 0px 12px 0px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 600;
+    box-shadow:   inset -5px -5px 15px #c9c9cb, inset 5px 5px 15px #131212;
+}
+.btn--login:hover{
+    background-color: rgb(2, 170, 170);
+}
+
+h3{
+    margin-top: 10px;
+    font-size: medium;
+    text-align: center;
+}
+h3 a{
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+.user,.password{
+    position: relative;
+}
+.user label,.password label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #c9c9cb;
+    
+}
+input:focus ~ label{
+    top: -20%;
+    color: white;
+    transition: 0.3s;
+
+}
+
+
+
